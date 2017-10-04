@@ -1,13 +1,16 @@
 import SourceLink from "./SourceLink";
+import sourcesAPI from "../sources.min.json";
 
 const NewsSourceList = props => (
   <div>
     <ul>
-      <SourceLink source="Google News" href="google" />
-      <SourceLink source="Hacker News" href="hacker" />
-      <SourceLink source="Reddit" href="reddit" />
+      {sourcesAPI.sources.map(source => (
+        <SourceLink key={source.id} name={source.name} id={source.id} />
+      ))}
     </ul>
-    <style jsx>{`margin: 0 auto;`}</style>
+    <style jsx>{`
+      margin: 0 auto;
+    `}</style>
   </div>
 );
 

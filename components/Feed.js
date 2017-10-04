@@ -6,13 +6,13 @@ const Feed = props => (
     <FeedHeader source={props.source} />
     <ArticlePreviewList articles={props.articles} />
     <style jsx>{`
+      padding: 3% 5%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: 3% 6%; 
-      box-flex: 0;
-      overflow: scroll;
-      width: 100%;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
     `}</style>
   </div>
 );

@@ -4,21 +4,22 @@ import Feed from "../components/Feed";
 
 import config from "../config.json";
 
-const Index = props => {
+const Source = props => {
   return (
     <Layout>
-      <Feed source="Google News" articles={props.data.articles} />
+      <Feed source={props.url.query.name} articles={props.data.articles} />
     </Layout>
   );
 };
 
-Index.getInitialProps = async function() {
+Source.getInitialProps = async function(context) {
+  const { id } = context.query;
   const res = await fetch(
-    `https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=${config.APIKEY}`
+    `https://newsapi.org/v1/articles?source=${id}&apiKey=${config.APIKEY}`
   );
   const data = await res.json();
 
   return { data };
 };
 
-export default Index;
+export default Source;

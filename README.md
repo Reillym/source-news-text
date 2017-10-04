@@ -4,7 +4,7 @@ This is very early version of a News reading app project to help me learn Reactj
 
 SETUP:
 
-Create a config.json file in the main directory with an APIKEY property
+Create a config.json file in the main directory and add your NewsAPI APIKEY
 
 ```JSON
 {
@@ -14,21 +14,24 @@ Create a config.json file in the main directory with an APIKEY property
 
 **TODO/IDEAS**
 
-* Add Search/Filter functionality to the News Feed.
-* Make the NewsSourceList dynamic by adding sources through the API
-* Add a Search Input that searches the News Sources by category or name
-* Add an Article Reader (Instead of going to the external link)
+* ~~Make the NewsSourceList dynamic taking data input~~
+* ~~Make source page dynamic by making use of queries~~
+* Make Responsive (add SideBar slide-in-out animation)
+* Add Search functionality to the News Feed.
+* Add filter/sort options for NewsSourceList (category dropdown(sports, tech) , name(search), country)
+* Add a text-only Article Reader (read a summary of the article or maybe whole thing directly in app) (build/use a tool to go to the news article source and extract the news text )
 * Add in the option to stream in new headliners at the top
+* Migrate to Redux for more organized data
 * Add meaingful animations
 * Add SVG Icons
-* Find a good color scheme
+* Create/Add a temporary Logo ( Maybe not to keep it text only )
+* Find a good color scheme / Add a way for user to customize color theme
 * Find the perfect font
-* Optimize
-* Better styling solution
-* Make Responsive (SideBar slide-in-out)
-* Make React Native Version?
-* Choose what language the source is written in
+* Optimize ( minimize API calls)
+* Better component styling solution
 * Add Keyboard Controls
+* Add a way to choose your news sources (Add or Delete from list) and save to a database or local storage
+* Make React Native Version?
 
 Nextjs built in features:
 
@@ -42,9 +45,9 @@ Original Goal: Quickly display news headlines from a variety of sources with tex
 
 Info:
 
-Font: TBD
+Font: Roboto (may change)
 
-Current Color Scheme - #50e3c2 + #4A4A4A
+Current Color Scheme - #50e3c2 + #4A4A4A (will change)
 
 https://newsapi.org/
 

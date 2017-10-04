@@ -6,7 +6,7 @@ const FeedHeader = props => (
     <SearchInput />
     <style jsx>{`
       display: flex;
-      margin-bottom: 4%;
+      margin-bottom: 9%;
       width: 100%;
       h1 {
         margin: 0;
