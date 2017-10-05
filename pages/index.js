@@ -8,7 +8,7 @@ import config from '../config.json';
 const Index = props => {
   return (
     <Layout>
-      <Feed source="Default" articles={props.data.articles} />
+      <Feed source="TechCrunch" articles={props.data.articles} />
     </Layout>
   );
 };

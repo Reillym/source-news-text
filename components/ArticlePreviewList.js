@@ -1,11 +1,11 @@
 import React from "react";
 import ArticlePreview from "./ArticlePreview";
 
-const ArticlePreviewList = props => (
+const ArticlePreviewList = ({articles}) => (
   <ul>
-    {props.articles.map(articles => (
+    {articles.map(articles => (
       <ArticlePreview
-        key={articles.title}
+        key={articles.url}
         title={articles.title}
         description={articles.description}
         author={articles.author}

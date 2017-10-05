@@ -1,12 +1,11 @@
-import SideBar from "./SideBar";
+import SideNav from "./SideNav";
 
 const Layout = props => (
   <div>
-    <SideBar />
     {props.children}
+    <SideNav />
     <style jsx>{`
       display: flex;
-      box-orient: horizontal;
     `}</style>
   </div>
 );

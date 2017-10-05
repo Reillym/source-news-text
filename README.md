@@ -17,9 +17,11 @@ Create a config.json file in the main directory and add your NewsAPI APIKEY
 * ~~Make the NewsSourceList dynamic taking data input~~
 * ~~Make source page dynamic by making use of queries~~
 * Make Responsive (add SideBar slide-in-out animation)
-* Add Search functionality to the News Feed.
+* Add Search functionality to the News Feed
+* Compile the most common headlines to the home page.
 * Add filter/sort options for NewsSourceList (category dropdown(sports, tech) , name(search), country)
 * Add a text-only Article Reader (read a summary of the article or maybe whole thing directly in app) (build/use a tool to go to the news article source and extract the news text )
+* Change Sidebar color when news source is changed
 * Add in the option to stream in new headliners at the top
 * Migrate to Redux for more organized data
 * Add meaingful animations
@@ -60,8 +62,8 @@ https://nodejs.org/en/docs/
 News Page Component Structures (names temporary)
 
 * Layout
-  * SideBar
-  * props.children ( Feed )
+  * SideNar
+  * Feed ( Props.Children )
 
 * SideBar
   * LogoTitle

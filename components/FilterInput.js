@@ -1,5 +1,5 @@
 // Used to filter or search for results (still deciding)
-const SearchInput = () => (
+const FilterInput = () => (
   <div>
     <input type="text" placeholder="Filter results..." />
     <style jsx>{`
@@ -11,9 +11,15 @@ const SearchInput = () => (
         box-shadow: none;
         border: 1px solid #50e3c2;
         border-radius: 3px;
+        transition: 0.3s all;
+      }
+      @media (max-width: 1300px) {
+        input {
+          display: none;
+        }
       }
     `}</style>
   </div>
 );
 
-export default SearchInput;
+export default FilterInput;
