@@ -8,14 +8,14 @@ import config from '../config.json';
 const Index = props => {
   return (
     <Layout>
-      <Feed source="TechCrunch" articles={props.data.articles} />
+      <Feed source="Google News" articles={props.data.articles} />
     </Layout>
   );
 };
 
 Index.getInitialProps = async function() {
   const res = await fetch(
-    `https://newsapi.org/v1/articles?source=techcrunch&apiKey=${config.APIKEY}`
+    `https://newsapi.org/v1/articles?source=google-news&apiKey=${config.APIKEY}`
   );
   const data = await res.json();
 
